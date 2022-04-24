@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookie clicker</title>
+
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="shortcut icon" href="/favicon.ico" />
+</head>
+
+<body>
+
+    <div class="info">
+        <h1>Cookie clicker</h1>
+        <h2>Made by <span>Wellmare</span></h2>
+    </div>
+
+    <div class="game">
+
+        <div class="cookie-wrapper">
+            <h2>Cookies: <strong><span id="cookie-counter">0</span></strong></h2>
+
+            <div class="button" id="button">
+                <img src="./img/biscuit-clip-art-43.png" alt="cookie" class="cookie">
+            </div>
+        </div>
+
+        <div class="info-game">
+
+            <h3>You are getting: <strong><span id="cookie-per-sec">0</span></strong> per second</h3>
+            <h3>You are getting: <strong><span id="cookie-per-click">0</span></strong> per click</h3>
+
+        </div>
+
+        <div class="btns-upgrade">
+
+            <button data-click-1 id="cookiePerClick1" class="btn">+1 Cookies Per Click!
+                <br>
+                Cost: 25 cookies
+            </button>
+
+            <button data-click-5 id="cookiePerClick5" class="btn">+5 Cookies Per Click!
+                <br>
+                Cost: 150 cookies
+            </button>
+
+            <button data-sec-1 id="cookiePerSec1" class="btn">+1 Cookies Per Second!
+                <br>
+                Cost: 50 cookies
+            </button>
+
+            <button data-sec-5 id="cookiePerSec5" class="btn">+5 Cookies Per Second!
+                <br>
+                Cost: 300 cookies
+            </button>
+
+        </div>
+
+        <div class="reset-data-wrapper">
+            <a class="reset-data">Reset data</a>
+        </div>
+
+    </div>
+
+
+
+    <script src="./js/script.js"></script>
+
+</body>
+
+</html>
