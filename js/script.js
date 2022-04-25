@@ -1,4 +1,4 @@
-const button = document.querySelector('#button')
+const button = document.querySelector('.cookie')
 
 const cookieCounter = document.querySelector('#cookie-counter')
 
