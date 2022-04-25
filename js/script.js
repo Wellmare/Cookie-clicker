@@ -1,3 +1,4 @@
+// Переменные со страницы \\
 const button = document.querySelector('.cookie')
 
 const cookieCounter = document.querySelector('#cookie-counter')
@@ -12,7 +13,11 @@ const btnResetData = document.querySelector('.reset-data')
 
 const costsUpgrades = document.querySelectorAll('.cost-upgrade')
 
+//  Переменные со страницы //
 
+
+
+// Локальные переменные \\
 
 let clickSize = 1
 
@@ -20,32 +25,30 @@ let countCookie = 0
 
 let countCookiePerSec = 0
 
-
-
 let priceUpgrades = [25, 150, 50, 300]
+
+// Локальные переменные //
 
 
 
 getValuesLocalStorage()
 
-
-
 cookiePerClick.textContent = clickSize
+
+
 
 // Кнопка печенька
 button.addEventListener('click', () => {
     clickBtn(clickSize)
 })
 
-
-
 const perSecondInterval = setInterval(perSecond, 1000)
 
 
 // Кнопки апгрейда
 btnsUpgrade.addEventListener('click', (e) => {
-    
     if (e.target.tagName === 'BUTTON') {
+
         // Кнопка +1 Печенька за клик // 25
         if (e.target.getAttribute('data-click-1') === '') {
             if (countCookie >= priceUpgrades[0]) {
@@ -124,24 +127,24 @@ function clickBtn(clickSize) {
 function changeCookieCount(count) {
     countCookie = countCookie + count
     cookieCounter.textContent = countCookie
-    localStorage.setItem('countCookie', countCookie)
+    localStorage.setItem('CountCookie', countCookie)
 }
 
 function setCookieCount(count) {
     countCookie = count
     cookieCounter.textContent = countCookie
-    localStorage.setItem('countCookie', countCookie)
+    localStorage.setItem('CountCookie', countCookie)
 }
 
 function changeCookiePerClick(count) {
     clickSize = clickSize + count
     cookiePerClick.textContent = clickSize
-    localStorage.setItem('cookiePerClick', clickSize)
+    localStorage.setItem('CookiePerClick', clickSize)
 }
 function changeCookiePerSec(count) {
     countCookiePerSec += count
     cookiePerSec.textContent = countCookiePerSec
-    localStorage.setItem('cookiePerSec', countCookiePerSec)
+    localStorage.setItem('CookiePerSec', countCookiePerSec)
 }
 
 
@@ -150,14 +153,14 @@ function perSecond() {
 }
 
 function getValuesLocalStorage() {
-    if (localStorage.getItem('countCookie')) {
-        setCookieCount(+localStorage.getItem('countCookie'))
+    if (localStorage.getItem('CountCookie')) {
+        setCookieCount(+localStorage.getItem('CountCookie'))
     }
-    if (localStorage.getItem('cookiePerClick')) {
-        clickSize = +localStorage.getItem('cookiePerClick')
+    if (localStorage.getItem('CookiePerClick')) {
+        clickSize = +localStorage.getItem('CookiePerClick')
     }
-    if (localStorage.getItem('cookiePerSec')) {
-        countCookiePerSec = +localStorage.getItem('cookiePerSec')
+    if (localStorage.getItem('CookiePerSec')) {
+        countCookiePerSec = +localStorage.getItem('CookiePerSec')
         cookiePerSec.textContent = countCookiePerSec
     }
 }
