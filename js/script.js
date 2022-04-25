@@ -28,9 +28,6 @@ let priceUpgrades = [25, 150, 50, 300]
 
 getValuesLocalStorage()
 
-resetData()
-
-
 
 
 cookiePerClick.textContent = clickSize
