@@ -1,0 +1,100 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background: url(../img/orange-gcb01d22fe_1280.jpg) no-repeat center / cover;
+    padding-bottom: 20px;
+}
+
+.info h1 {
+    font-weight: 700;
+    font-size: 50px;
+    color: rgb(247, 174, 40);
+    text-align: center;
+}
+.info h2 span {
+    font-weight: 700;
+    font-size: 2rem;
+}
+.info h2 {
+    text-align: right;
+    margin-right: 20px;
+}
+
+.game {
+    padding-top: 20px;
+    border-top: 3px solid #000;
+}
+
+.cookie {
+    width: 250px;
+    height: 250px;
+    cursor: pointer;
+    /* animation-name: rotation;
+    animation-duration: 10s;
+    animation-timing-function:linear;
+    animation-iteration-count: infinite; */
+}
+
+.cookie:active {
+    animation-name: pulse;
+    animation-duration: 0.15s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1
+}
+
+.game {
+    text-align: center;
+}
+
+.cookie-wrapper h2 span {
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.info-game h3 span {
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.btn {
+    background-color: rgb(231, 197, 42);
+    border: 2px solid rgb(187, 128, 0);
+    padding: 10px;
+    border-radius: 20px;
+    font-weight: 500;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.reset-data-wrapper {
+    /* display: block; */
+    margin-top: 70px;
+    
+}
+.reset-data {
+    padding: 10px;
+    border: 2px solid #000;
+    background-color: #d833c2ce;
+    cursor: pointer;
+
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(360deg)
+    }
+    100% {
+        transform: rotate(0deg)
+    }
+}
+
+@keyframes pulse {
+    /* 0% {
+        transform: scale(1)
+    } */
+    50% {
+        transform: scale(1.2)
+    }
+    100% {
+        transform: scale(1)
+    }
+}
