@@ -20,7 +20,7 @@
 <body>
 
     <div class="info">
-        <h1>Cookie clicker</h1>
+        <h1>Cookie clicker v2.0 BETA</h1>
         <h2>Made by <span>Wellmare</span></h2>
     </div>
 
@@ -37,13 +37,13 @@
         <div class="info-game">
 
             <h3>You are getting: <strong><span id="cookie-per-sec">0</span></strong> per second</h3>
-            <h3>You are getting: <strong><span id="cookie-per-click">0</span></strong> per click</h3>
+            <h3>You are getting: <strong><span id="cookie-per-click">1</span></strong> per click</h3>
 
         </div>
 
         <div class="btns-upgrade">
 
-            <button data-click-1 id="cookiePerClick1" class="btn">+1 Cookies Per Click!
+            <!-- <button data-click-1 id="cookiePerClick1" class="btn">+1 Cookies Per Click!
                 <br>
                 Cost: <span class="cost-upgrade">25</span> cookies
             </button>
@@ -61,7 +61,45 @@
             <button data-sec-5 id="cookiePerSec5" class="btn">+5 Cookies Per Second!
                 <br>
                 Cost: <span class="cost-upgrade">300</span> cookies
-            </button>
+            </button> -->
+            <div class="buttons-upgrades">
+                <div class="button-upgrade" id="per-click">
+                    <h4 class="button-name">Cookie Per Click</h4>
+                    <h5 class="price-to-user-value">Price to <span class="user-value-upgrade">5</span> Upgrades:
+                        <span class="price-user">125</span> Cookies
+                    </h5>
+                    <div class="buttons-wrapper">
+                        <div class="tabs-counts">
+                            <div class="tab-count tab-count-per-click active">1</div>
+                            <div class="tab-count tab-count-per-click">5</div>
+                            <div class="tab-count tab-count-per-click">10</div>
+                            <div class="tab-count tab-count-per-click">MAX</div>
+                        </div>
+                        <div class="button-buy">BUY</div>
+
+                    </div>
+                    <h5 class="price-to-1">Price to 1 Upgrade: <span class="price-1">25</span> Cookies</h5>
+                </div>
+
+                <div class="button-upgrade" id="per-sec">
+                    <h4 class="button-name">Cookie Per Second</h4>
+                    <h5 class="price-to-user-value">Price to <span class="user-value-upgrade">5</span> Upgrades:
+                        <span class="price-user">250</span> Cookies
+                    </h5>
+                    <div class="buttons-wrapper">
+                        <div class="tabs-counts">
+                            <div class="tab-count tab-count-per-sec active">1</div>
+                            <div class="tab-count tab-count-per-sec">5</div>
+                            <div class="tab-count tab-count-per-sec">10</div>
+                            <div class="tab-count tab-count-per-sec">MAX</div>
+                        </div>
+                        <div class="button-buy">BUY</div>
+
+                    </div>
+                    <h5 class="price-to-1">Price to 1 Upgrade: <span class="price-1">50</span> Cookies</h5>
+                </div>
+            </div>
+
 
         </div>
 
@@ -73,7 +111,7 @@
 
 
 
-    <script src="./js/script.js"></script>
+    <script src="./js/newScript.js"></script>
 
 </body>
 
